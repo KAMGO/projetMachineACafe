@@ -1,0 +1,68 @@
+plugins {
+
+    // Utilisation du plugin pour compiler du Java
+    id 'java'
+	id 'org.openjfx.javafxplugin' version '0.0.9'
+    // plugin pour exécuter du Java
+    id 'application'
+}
+
+application {
+
+    // Configure la classe principale pour le plugin application
+    mainClassName ='machineACafePro.MainApp'
+}
+
+jar {
+
+    // Configure la tâche jar pour créer un jar exécutable
+    manifest {
+        attributes 'Main-Class': 'machineACafePro.MainApp'
+    }
+
+    // Ajoute chaque dépendance au niveau compilation à l'archive .jar
+    from{
+        configurations.compileClasspath.collect{ zipTree(it) }
+    }
+}
+
+repositories {
+    //Utilise le dépôt bintray.com/bintray/jcenter
+    jcenter()
+}
+
+dependencies {
+
+    // Librairie pour les tests.
+    // format : 'groupe:nom:version'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+
+    // Libraririe pour exécuter les tests unitaires.
+    // Uniquement nécessaire pour l'exécution des tests
+    // et pas pour la compilation.
+    testRuntimeOnly'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+    
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    //api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:28.2-jre'
+}
+
+test {
+
+    // Indique à Gradle qu'il faut utilser JUnit pour les tests.
+    useJUnitPlatform()
+}
+
+javafx {
+    version = "15.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+run {
+    if (javafx.platform.classifier == 'win') {
+        // Temporal fix for Eclipse with JDK 1.8 and Windows 
+        systemProperty "java.library.path", "C:\tmp"
+    }
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="569.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-1.0" prefHeight="58.0" prefWidth="524.0" spacing="10.0" style="-fx-background-color: ffff;">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/espresso.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/espressoMachh.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/cafe.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/cappucino.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/macchiato.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/cafeLait.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/mousseLait1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/boissonSpecial.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: ffff;">
+               <image>
+                  <Image url="@../resources/Images/start_stop.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Pane layoutY="58.0" prefHeight="228.0" prefWidth="570.0" style="-fx-background-color: green;">
+         <children>
+            <Pane layoutX="128.0" layoutY="30.0" prefHeight="158.0" prefWidth="314.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutX="71.0" layoutY="55.0" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: cfcc;">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="174.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="121.0" text="Netoyer dans   :" />
+                              <Label id="nbreCafeAvEntretien" alignment="CENTER" prefHeight="18.0" prefWidth="40.0" text="0" />
+                              <Label prefHeight="18.0" prefWidth="58.0" text="cafés" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="34.0" prefWidth="174.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="102.0" text="Detartrer dans : " />
+                              <Label id="nbreCafeAvDetartrage" alignment="CENTER" prefHeight="26.0" prefWidth="28.0" text="0" />
+                              <Label prefHeight="23.0" prefWidth="28.0" text="cafés" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label id="intensiteCafe" layoutY="132.0" prefHeight="25.0" prefWidth="100.0" text="intensite Café" />
+                  <Label id="qteBoisson" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="132.0" prefHeight="25.0" prefWidth="100.0" text="qtite boisson" />
+                  <Label id="ecranAffichInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="18.0" prefHeight="112.0" prefWidth="290.0" style="-fx-background-color: acde;" text="ecran info" textAlignment="CENTER" />
+                  <ListView id="netoyageEntretien" layoutX="12.0" layoutY="18.0" prefHeight="112.0" prefWidth="290.0" style="-fx-background-color: white;" />
+               </children>
+            </Pane>
+            <Button layoutX="444.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: black;" text="menu" textFill="#d3cece" />
+            <VBox layoutX="444.0" layoutY="31.0" prefHeight="130.0" prefWidth="40.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/down.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/preceding.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/ok.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="75.0" layoutY="31.0" prefHeight="151.0" prefWidth="53.0">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/favori.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/doubleTasse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="57.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/Images/graineCafe1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Button layoutX="444.0" layoutY="159.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="47.0" style="-fx-background-color: black;" text="ml" textFill="#e8dbdb" />
+            <Button layoutX="-1.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: black;" text="cafe moulu" textFill="#d0c9c9" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="31.0" prefHeight="17.0" prefWidth="20.0" text="0" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="59.0" prefHeight="17.0" prefWidth="72.0" style="-fx-background-color: black;" text="Café No :" textFill="#d7c6c6" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="76.0" prefHeight="27.0" prefWidth="52.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="1.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: black;" text="Mouture" textFill="#d7caca" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="134.0" prefHeight="11.0" prefWidth="47.0" text="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="-1.0" layoutY="162.0" mnemonicParsing="false" style="-fx-background-color: black;" text="filtre à eau" textFill="#d7cfcf" />
+            <Label alignment="CENTER" layoutX="21.0" layoutY="189.0" prefHeight="11.0" prefWidth="38.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="468.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: black;" text="simuler panne" textFill="#d3c8c8" />
+            <Button layoutX="521.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: black;" text="lait" textFill="#e4dbdb" />
+            <Label alignment="CENTER" layoutX="535.0" layoutY="33.0" prefHeight="17.0" prefWidth="20.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button id="btnAromDouble" layoutX="490.0" layoutY="64.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: black;" text="Arom2Shot" textFill="#e5dddd" />
+            <ImageView fitHeight="38.0" fitWidth="28.0" layoutX="530.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Images/keyVerrou.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox layoutY="282.0" prefHeight="80.0" prefWidth="107.0" style="-fx-background-color: white;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Mettre de l'eau" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Mettre du café" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Vider bac collect" />
+         </children>
+      </VBox>
+      <VBox layoutX="107.0" layoutY="282.0" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="29.0" prefWidth="88.0" text="Recervoir d'eau" />
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="86.0" text="Recervoir café" />
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="93.0" text="Quantite dechet" />
+         </children>
+      </VBox>
+      <VBox layoutX="207.0" layoutY="282.0" prefHeight="80.0" prefWidth="131.0" style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="29.0" prefWidth="131.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="92.0" text="tube &amp; tuyau" />
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="40.0" text="0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane layoutX="338.0" layoutY="283.0" prefHeight="80.0" prefWidth="232.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: red;" text="Moulin à grain " textFill="#170101" />
+            <Label alignment="CENTER" layoutX="123.0" layoutY="2.0" prefHeight="25.0" prefWidth="20.0" text="0" textFill="#c9c1c1" />
+            <Button alignment="CENTER" layoutY="22.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: red;" text="Mousseur à lait" />
+            <Label alignment="CENTER" layoutX="123.0" layoutY="32.0" prefHeight="17.0" prefWidth="20.0" text="0" textFill="#f5ecec" />
+            <Button alignment="CENTER" layoutY="54.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="123.0" style="-fx-background-color: red;" text="defaillanceSysteme" />
+            <Label alignment="CENTER" layoutX="123.0" layoutY="53.0" prefHeight="27.0" prefWidth="20.0" text="0" textFill="#f5ecec" />
+            <Button layoutX="143.0" mnemonicParsing="false" style="-fx-background-color: red;" text="filtreEau" textFill="#1e0202" />
+            <Label alignment="CENTER" layoutX="204.0" layoutY="1.0" prefHeight="22.0" prefWidth="20.0" text="0" textFill="#dad5d5" />
+            <Button layoutX="143.0" layoutY="28.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: red;" text="bandeau " />
+            <Label alignment="CENTER" layoutX="218.0" layoutY="32.0" prefHeight="17.0" prefWidth="13.0" text="0" textFill="#eddede" />
+            <Button alignment="CENTER" layoutX="147.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: red;" text="ecran" />
+            <Label layoutX="211.0" layoutY="58.0" text="0" textFill="#e5d9d9" />
+         </children>
+      </Pane>
+      <HBox layoutX="207.0" layoutY="336.0" prefHeight="25.0" prefWidth="131.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="96.0" text="Tuyau à lait" />
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="42.0" text="0" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

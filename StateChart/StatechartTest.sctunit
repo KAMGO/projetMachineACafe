@@ -1,0 +1,21 @@
+testclass StatechartTest for statechart cafePro {
+	
+	@Test
+	operation Stop() {
+		enter
+		assert(active(cafePro.main.Stop))
+		assert(pbFiltreEau==false)
+		assert(nivoCollecteur==0)
+		assert(etatDuFiltre==0)
+		exit
+	}
+	/* @Test
+	operation Idle() {
+		enter
+		raise start
+		assert(active(cafePro.main.idle))
+		assert(pbFiltreEau==false)
+		assert(nivoCollecteur==0)
+		exit
+	}*/
+}
